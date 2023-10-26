@@ -9,7 +9,7 @@
     --secondary: #000;
     --grey: #D3D3D3;
     --navBg: #F6EBFF;
-    --bodyColor: #080808;
+    --bodyColor: #393637;
 }
 /* ----- ---------------SMALL SCREENS FIRST---------- */
 body{
@@ -237,16 +237,71 @@ article .btn:hover{
     align-items: center;
     justify-content: center;
 }
+
+/* Contact section */
+.contact{
+    background-color: #393637;
+    padding: 3rem 0;
+}
+.contactTitle{
+    color: var(--primary);
+    z-index: 0;
+}
+.title{
+    margin-bottom: 2rem;
+}
+.social{
+    margin-bottom: 2rem;
+    flex-basis: 40%;
+}
+.footer-rows{
+    color: var(--primary);
+}
+.footer-col{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.form-part{
+    flex-basis: 60%;
+}
+input, textarea{
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: #555;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    padding: 1rem;
+    font-family: inherit;
+    color: var(--navBg);
+}
+::placeholder{
+    color: var(--navBg);
+}
+.form-submit{
+    background: var(--accent);
+    color: var(--primary);
+    border: none;
+    outline: none;
+    margin-top: 0;
+    font-size: 17px;
+}
+#msg{
+    color: #61b752;
+    font-size: 19px;
+    margin-top: 1rem;
+    display: block;
+}
 /* footer */
 .last-section{
     background-color: var(--accent);
     color: var(--primary);
     padding: 1rem;
 }
-.footer-col{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+.copyright-text{
+    text-align: center;
 }
 .footer-col a{
     color: var(--primary);
@@ -332,5 +387,15 @@ article .btn:hover{
     .profile-pic{
         width: 250px;
         height: 250px;
+    }
+    /* contact section */
+    .form-submit{
+        padding: 15px 50px;
+    }
+    .social{
+        align-self: flex-start;
+    }
+    .title{
+        justify-content: start;
     }
 }

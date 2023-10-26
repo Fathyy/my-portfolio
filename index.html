@@ -16,10 +16,10 @@
                 </div>
         
                 <ul class="nav-group" id="sideMenu">
-                    <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#name" class="nav-link">Home</a></li>
                     <li class="nav-item"><a href="#myProjects" class="nav-link">Projects</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#contactMe" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="#aboutMe" class="nav-link">About</a></li>
                     <i class="fa-solid fa-xmark"></i>
                 </ul>
                 <i class="fa-solid fa-bars"></i>
@@ -33,7 +33,7 @@
         <div class="container">
             <div class="heading-wrapper">
                 <div class="heading">
-                    <h1 class="anim">Fathi Abdi Hassan</h1>
+                    <h1 class="anim" id="name">Fathi Abdi Hassan</h1>
                     <p class="anim">Hello, I am a Web Developer. I can build web applications <br>using  
                         <span>HTML, CSS, Javascript and PHP</span></p>
                         <div class="button-div">
@@ -48,7 +48,7 @@
     <!-- About me section to describe myself further -->
     <section class="about">
         <div class="container">
-            <div class="title flex" id="myProjects">
+            <div class="flex" id="aboutMe">
                 <h2 class="projectsTitle">About Me</h2>
             </div>
             <div class="about-row">
@@ -71,7 +71,7 @@
 
     <section class="projects">
         <div class="container">
-            <div class="title flex" id="myProjects">
+            <div class="flex" id="myProjects">
                 <h2 class="projectsTitle">My Projects</h2>
             </div>
             <div class="projects-row">
@@ -165,27 +165,63 @@
         </div>
     </section>
 
+    <!-- contact section -->
+    <section class="contact">
+        <div class="container">
+            <div class="about-row">
+                <div class="social">
+                    <div class="title flex" id="contactMe">
+                        <h2 class="projectsTitle contactTitle">Contact Me</h2>
+                    </div>
+                    <div class="footer-rows">
+                        <div class="footer-col">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p class="location">Nairobi, Kenya</p>
+                        </div>
+        
+                        <div class="footer-col">
+                            <i class="fa-regular fa-envelope"></i>
+                            <p class="address">fathiabdi254@gmail.com</p>
+                        </div>
+        
+                        <div class="footer-col social">
+                            <a href="https://www.linkedin.com/in/fathi-abdi-b3602022b/"><i class="fa-brands fa-linkedin"></i></a>
+                            
+                            <a href="https://github.com/Fathyy">
+                                <i class="fa-brands fa-github"></i></a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- form -->
+                <div class="form-part">
+                    <form name="submit-to-google-sheet">
+                        <div>
+                            <input type="text" placeholder="Your Name" name="Name">
+                        </div>
+                        <div>
+                            <input type="email" name="Email" id="" placeholder="Your Email">
+                        </div>
+                        <div>
+                            <textarea name="Message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                        </div>
+                        <div class="flex">
+                            <button class="btn form-submit">Submit</button>
+                        </div>
+                    </form>
+                    <span id="msg"></span>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
     <footer class="last-section">
         <div class="container">
-            <div class="footer-rows">
-                <div class="footer-col">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p class="location">Nairobi, Kenya</p>
-                </div>
-
-                <div class="footer-col">
-                    <i class="fa-regular fa-envelope"></i>
-                    <p class="address">fathiabdi254@gmail.com</p>
-                </div>
-
-                <div class="footer-col social">
-                    <a href="https://www.linkedin.com/in/fathi-abdi-b3602022b/"><i class="fa-brands fa-linkedin"></i></a>
-                    
-                    <a href="https://github.com/Fathyy">
-                        <i class="fa-brands fa-github"></i></a>
-                    
-                </div>
-            </div>
+            <p class="copyright-text">© Copyright 2023 Fathi Abdi </p>
         </div>
     </footer>
 
